@@ -1,0 +1,126 @@
+    
+    
+:root {
+    --color-green: #00fdc0;
+    --color-grey: #3C493F;
+    --color-orange: "#EE964B";
+}
+
+html, body{
+    width: 100%;
+}
+
+    
+body {
+    background-color: #1C221D;
+    color: white;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    margin: 0!important;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+    
+header, main, footer {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+    background-color: var(--color-green);
+    color: var(--color-grey);
+}
+
+@media only screen and (max-width: 800px) {
+    header, main, footer {
+        width: 100%;
+    }
+
+    header > h1{
+        display: flex;
+        justify-content: center;
+    }
+}
+    
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--color-green);
+}
+    
+nav li {
+    float: left;
+    color: var(--color-grey);
+}
+    
+nav li a {
+    display: block;
+    color: #3C493F;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+}
+    
+nav li a:hover {
+    background-color: #00B8A2;
+}
+
+.underline {
+    border-bottom: 2px solid var(--color-green);
+    display: inline-block;
+    line-height: 0.85;
+}
+
+/*about page styes*/
+.aboutbox{
+    padding: 2rem 0;
+    width: 80%;
+    margin: auto;
+}
+
+.aboutTitle{
+    margin-bottom: 20px;
+    font-size: 200%;
+}
+
+@media only screen and (max-width: 800px) {
+    .aboutbox {
+        width: calc(100% - 2rem);
+    }
+}
+
+
+/*doc page styles*/
+
+.docbox{
+    padding: 2rem 0;
+    border-top: solid var(--color-green);
+}
+
+@media only screen and (max-width: 800px) {
+    .docbox {
+        padding: 2rem 1rem;;
+    }
+}
+
+.docTitle{
+    font-size: 200%;
+}
+
+.docEndPoint{
+    font-size: 150%;
+    padding: 1rem 0;
+}
+
+.docExample{
+    font-size: 150%;
+}
+
